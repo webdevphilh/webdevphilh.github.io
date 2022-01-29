@@ -1,0 +1,31 @@
+
+
+.hidden{
+    display: none;
+}
+
+#survey-mainbox{
+    border: solid darkgoldenrod 1px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 20rem;
+    margin-top: 5rem;
+    text-align: center;
+
+    #slider-box{
+        border: red solid 1px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 10rem;
+    
+        .slider{
+            min-width: 100%;
+            margin: 1rem;
+            border: greenyellow 1px solid;
+        }
+    }
+}

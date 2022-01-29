@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+
+<!--
+    progress anzeige bei forschritt der fragen
+-->
+
+<body>
+    <div id="survey-mainbox">
+        <h1 id="title">Title</h1>
+        <p id="description">description text</p>
+    
+        <form id="survey-form" action="#">
+    
+            <div id="slider-box">
+                <div class="slider">
+                    <label id="name-label" for="name">Name</label>
+                    <input id="name" type="text" required placeholder="your Name">
+                </div>
+        
+                <div class="slider hidden">
+                    <label id="email-label" for="email">Email</label>
+                    <input id="email" type="email" placeholder="email@gg.com">
+                </div>
+        
+                <div class="slider hidden">
+                    <label id="number-label" for="number">Number</label>
+                    <input id="number" type="number" min="0" max="100" placeholder="0 - 100">
+                </div>
+        
+                <div class="slider hidden">
+                    <label for="dropdown">dropdown</label>           
+                    <select name="dropdown" id="dropdown">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                
+                <div class="slider hidden">
+                    <input type="radio" name="attribute" id="test">
+                    <label for="test">test</label>
+                    <input type="radio" name="attribute" id="">
+                    <input type="radio" name="attribute" id="">
+                </div>
+        
+                <div class="slider hidden">
+                    <input type="checkbox" name="" id="" value="test">
+                    <input type="checkbox" name="" id="" value="">
+                    <input type="checkbox" name="" id="" value="">
+                </div>
+        
+                <div class="slider hidden">
+                    <textarea name="" id="" cols="30" rows="4"></textarea>
+                </div>
+            </div>
+    
+            <p id="progress_bar"></p>
+
+            <button id="prev_btn">&larr;</button>
+            <button id="next_btn">&rarr;</button>
+            <button type="submit" id="submit" class="hidden">submitbutton</button>
+        </form>
+    </div>
+</body>
+<script src="./slider.js"></script>
+</html>

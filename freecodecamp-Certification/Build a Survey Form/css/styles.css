@@ -1,0 +1,36 @@
+.hidden {
+  display: none;
+}
+
+#survey-mainbox {
+  border: solid darkgoldenrod 1px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 20rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+#survey-mainbox #slider-box {
+  border: red solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10rem;
+}
+
+#survey-mainbox #slider-box .slider {
+  min-width: 100%;
+  margin: 1rem;
+  border: greenyellow 1px solid;
+}
+/*# sourceMappingURL=styles.css.map */
