@@ -10,12 +10,18 @@ let counter = 0;
 progressText.innerText = counter+1 + " / " + slider.children.length;
 
 prevButton.addEventListener("click", () => {
-    counter--;
-    if (slider.children.length == counter){
-        // freecodecamp needs a button with the type "submit" to accept the challenge
-        document.getElementById("submit").classList.remove("hidden");
+
+    if(counter >= 1){
+        counter--;
     }
-    else{
+
+    if(counter+1 < slider.children.length){
+        // freecodecamp needs a button with the type "submit" to accept the challenge, i would have liked to changed to "type=submit" instead
+        nextButton.classList.remove("hidden");
+        document.getElementById("submit").classList.add("hidden");
+    }
+
+    if(counter >= 0){
         slider.children[counter+1].classList.add("hidden");
         slider.children[counter].classList.remove("hidden");
         progressText.innerText = (counter + 1) + " / " + slider.children.length;
@@ -23,14 +29,18 @@ prevButton.addEventListener("click", () => {
 });
 
 nextButton.addEventListener("click", () => {
-    counter++;
-    if (slider.children.length == counter){
-        // freecodecamp needs a button with the type "submit" to accept the challenge
+
+    if(counter < slider.children.length){    
+        counter++;
+    }
+
+    if(slider.children.length == counter + 1){
+        // freecodecamp needs a button with the type "submit" to accept the challenge, i would have liked to changed to "type=submit" instead
+        nextButton.classList.add("hidden");
         document.getElementById("submit").classList.remove("hidden");
     }
-    else{
-        slider.children[counter-1].classList.add("hidden");
-        slider.children[counter].classList.remove("hidden");
-        progressText.innerText = (counter + 1) + " / " + slider.children.length;
-    }
+
+    slider.children[counter-1].classList.add("hidden");
+    slider.children[counter].classList.remove("hidden");
+    progressText.innerText = (counter + 1) + " / " + slider.children.length;
 });
