@@ -46,6 +46,14 @@ button {
   display: none;
 }
 
+.button-box {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 #survey-mainbox {
   width: 40rem;
   text-align: center;
@@ -53,8 +61,18 @@ button {
   color: #092327;
 }
 
+#survey-mainbox #slider-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #survey-mainbox #slider-box .slider {
-  background-color: rgba(241, 145, 50, 0.466);
+  width: 70%;
+  background-color: rgba(255, 238, 184, 0.623);
   border-radius: .5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -62,6 +80,7 @@ button {
           flex-direction: column;
   -webkit-transition: 250ms all;
   transition: 250ms all;
+  padding: 2rem;
 }
 
 #survey-mainbox #slider-box .slider .slider-content {
@@ -72,5 +91,26 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#survey-mainbox #slider-box .slider .slider-content label {
+  margin-bottom: 2rem;
+}
+
+#survey-mainbox #slider-box .slider .slider-content input[type="text"],
+#survey-mainbox #slider-box .slider .slider-content input[type="email"],
+#survey-mainbox #slider-box .slider .slider-content input[type="number"],
+#survey-mainbox #slider-box .slider .slider-content select {
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  padding: .25rem;
+}
+
+#survey-mainbox #slider-box .slider .slider-content div {
+  text-align: left;
+  padding-left: calc(50% - 6rem);
 }
 /*# sourceMappingURL=styles.css.map */

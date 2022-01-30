@@ -16,26 +16,54 @@ button{
     display: none;
 }
 
+.button-box{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 #survey-mainbox{
     width: 40rem;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     color: #092327;
 
+
     #slider-box{
-        //display: flex;
-        //position: relative;
-        //flex-direction: row;
+        display: flex;
+        justify-content: center;
 
         .slider{
-            background-color: hsla(30, 87%, 57%, 0.466);
+            width: 70%;
+            background-color: hsla(46, 100%, 86%, 0.623);
             border-radius: .5rem;
             flex-direction: column;
             transition: 250ms all;
+            padding: 2rem;
 
             .slider-content{
                 display: flex;
                 flex-direction: column;
+
+                label{
+                    margin-bottom: 2rem;
+                }
+
+                input[type="text"],
+                input[type="email"],
+                input[type="number"],
+                select{
+                    width: 50%;
+                    align-self: center;
+                    text-align: center;
+                    padding: .25rem;
+                }
+
+                div{
+                    text-align: left;
+                    padding-left: calc(50% - 6rem);
+                }
             }
         }
     }

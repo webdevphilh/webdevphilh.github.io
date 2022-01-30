@@ -27,7 +27,7 @@
                 <div class="slider fade-in">
                     <div class="slider-content">
                         <label id="name-label" for="name">Please enter your name here.</label>
-                        <input id="name" type="text" required placeholder="your Name">
+                        <input id="name" type="text" required placeholder="Name">
                     </div>
                 </div>
         
@@ -60,31 +60,40 @@
                 <div class="slider hidden fade-in">
                     <div class="slider-content">
                         <p>Would you recomment this site?</p>
-                        <input type="radio" name="attribute" id="yes">
-                        <label for="test">Yes, it´s great!</label>
-    
-                        <input type="radio" name="attribute" id="maybe">
-                        <label for="test">Maybe, with some changes.</label>
-    
-                        <input type="radio" name="attribute" id="no">
-                        <label for="test">No, it´s bad.</label>
+                        <div>
+                            <input type="radio" name="attribute" id="yes">
+                            <label for="test">Yes, it´s great!</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="attribute" id="maybe">
+                            <label for="test">Maybe, with some changes.</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="attribute" id="no">
+                            <label for="test">No, it´s bad.</label>
+                        </div>
                     </div>
                 </div>
         
                 <div class="slider hidden fade-in">
                     <div class="slider-content">
                         <p>What would you change?</p>
-                        <input type="checkbox" name="the questions" id="" value="the questions">
-                        <label for="the questions">the questions</label>
-    
-                        <input type="checkbox" name="the animations" value="the animations">
-                        <label for="the animations">the animations</label>
-    
-                        <input type="checkbox" name="the general style" id="" value="the general style">
-                        <label for="the general style">the general style</label>
-    
-                        <input type="checkbox" name="the slider function" id="" value="the slider function">
-                        <label for="the slider function">the slider function</label>
+                        <div>
+                            <input type="checkbox" name="the questions" id="" value="the questions">
+                            <label for="the questions">the questions</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="the animations" value="the animations">
+                            <label for="the animations">the animations</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="the general style" id="" value="the general style">
+                            <label for="the general style">the general style</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="the slider function" id="" value="the slider function">
+                            <label for="the slider function">the slider function</label>
+                        </div>
                     </div>
                 </div>
         
@@ -94,12 +103,13 @@
                     </div>
                 </div>
             </div>
-    
-            <p id="progress_bar"></p>
-
-            <button type="button" id="prev_btn">&larr;</button>
-            <button type="button" id="next_btn">&rarr;</button>
-            <button type="submit" id="submit" class="hidden">Send infos &#127942;</button>
+            
+            <div class="button-box">
+                <p id="progress_bar"></p>
+                <button type="button" id="prev_btn">&larr;</button>
+                <button type="button" id="next_btn">&rarr;</button>
+                <button type="submit" id="submit" class="hidden">Send infos &#127942;</button>
+            </div>
         </form>
     </div>
 </body>
