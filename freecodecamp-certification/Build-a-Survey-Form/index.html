@@ -4,69 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--extern-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+    <!--own-->
     <link rel="stylesheet" href="./css/styles.css">
+
     <title>Survey</title>
 </head>
 
-<!--
-    progress anzeige bei forschritt der fragen
--->
 
 <body>
     <div id="survey-mainbox">
-        <h1 id="title">Title</h1>
-        <p id="description">description text</p>
+        <h1 id="title">Please answer us some questions</h1>
+        <p id="description">To ensure that future customers like this form element even more, we would like you to enter your opinion on this survey form.</p>
     
         <form id="survey-form" action="#">
     
             <div id="slider-box">
-                <div class="slider">
-                    <label id="name-label" for="name">Name</label>
-                    <input id="name" type="text" required placeholder="your Name">
+                <div class="slider fade-in">
+                    <div class="slider-content">
+                        <label id="name-label" for="name">Please enter your name here.</label>
+                        <input id="name" type="text" required placeholder="your Name">
+                    </div>
                 </div>
         
-                <div class="slider hidden">
-                    <label id="email-label" for="email">Email</label>
-                    <input id="email" type="email" placeholder="email@gg.com">
+                <div class="slider hidden fade-in">
+                    <div class="slider-content">
+                        <label id="email-label" for="email">For a little thank-you, you can enter your email here.</label>
+                        <input id="email" type="email" placeholder="email@gg.com">
+                    </div>
                 </div>
         
-                <div class="slider hidden">
-                    <label id="number-label" for="number">Number</label>
-                    <input id="number" type="number" min="0" max="100" placeholder="0 - 100">
+                <div class="slider hidden fade-in">
+                    <div class="slider-content">
+                        <label for="dropdown">How did you got here?</label>           
+                        <select name="dropdown" id="dropdown">
+                            <option value="">github</option>
+                            <option value="">searchengines</option>
+                            <option value="">freecodecamp</option>
+                            <option value="">other</option>
+                        </select>
+                    </div>
                 </div>
-        
-                <div class="slider hidden">
-                    <label for="dropdown">dropdown</label>           
-                    <select name="dropdown" id="dropdown">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select>
+
+                <div class="slider hidden fade-in">
+                    <div class="slider-content">
+                        <label id="number-label" for="number">please rate your experience while clicking through this survey so far.</label>
+                        <input id="number" type="number" min="0" max="100" placeholder="0 - 100">
+                    </div>
                 </div>
                 
-                <div class="slider hidden">
-                    <input type="radio" name="attribute" id="test">
-                    <label for="test">test</label>
-                    <input type="radio" name="attribute" id="">
-                    <input type="radio" name="attribute" id="">
+                <div class="slider hidden fade-in">
+                    <div class="slider-content">
+                        <p>Would you recomment this site?</p>
+                        <input type="radio" name="attribute" id="yes">
+                        <label for="test">Yes, it´s great!</label>
+    
+                        <input type="radio" name="attribute" id="maybe">
+                        <label for="test">Maybe, with some changes.</label>
+    
+                        <input type="radio" name="attribute" id="no">
+                        <label for="test">No, it´s bad.</label>
+                    </div>
                 </div>
         
-                <div class="slider hidden">
-                    <input type="checkbox" name="" id="" value="test">
-                    <input type="checkbox" name="" id="" value="">
-                    <input type="checkbox" name="" id="" value="">
+                <div class="slider hidden fade-in">
+                    <div class="slider-content">
+                        <p>What would you change?</p>
+                        <input type="checkbox" name="the questions" id="" value="the questions">
+                        <label for="the questions">the questions</label>
+    
+                        <input type="checkbox" name="the animations" value="the animations">
+                        <label for="the animations">the animations</label>
+    
+                        <input type="checkbox" name="the general style" id="" value="the general style">
+                        <label for="the general style">the general style</label>
+    
+                        <input type="checkbox" name="the slider function" id="" value="the slider function">
+                        <label for="the slider function">the slider function</label>
+                    </div>
                 </div>
         
-                <div class="slider hidden">
-                    <textarea name="" id="" cols="30" rows="4"></textarea>
+                <div class="slider hidden fade-in">
+                    <div class="slider-content">
+                        <textarea placeholder="Your final thoughts:" name="final_text" id="" cols="30" rows="4"></textarea>
+                    </div>
                 </div>
             </div>
     
             <p id="progress_bar"></p>
 
-            <button id="prev_btn">&larr;</button>
-            <button id="next_btn">&rarr;</button>
-            <button type="submit" id="submit" class="hidden">submitbutton</button>
+            <button type="button" id="prev_btn">&larr;</button>
+            <button type="button" id="next_btn">&rarr;</button>
+            <button type="submit" id="submit" class="hidden">Send infos &#127942;</button>
         </form>
     </div>
 </body>

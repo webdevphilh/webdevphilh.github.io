@@ -1,31 +1,42 @@
+@import "slide";
 
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #F7FFF7;
+}
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+button{
+    width: 10rem;
+}
 
 .hidden{
     display: none;
 }
 
 #survey-mainbox{
-    border: solid darkgoldenrod 1px;
-
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: 20rem;
-    margin-top: 5rem;
+    width: 40rem;
     text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #092327;
 
     #slider-box{
-        border: red solid 1px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        height: 10rem;
-    
+        //display: flex;
+        //position: relative;
+        //flex-direction: row;
+
         .slider{
-            min-width: 100%;
-            margin: 1rem;
-            border: greenyellow 1px solid;
+            background-color: hsla(30, 87%, 57%, 0.466);
+            border-radius: .5rem;
+            flex-direction: column;
+            transition: 250ms all;
+
+            .slider-content{
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }

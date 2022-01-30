@@ -1,36 +1,76 @@
+@-webkit-keyframes fader {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fader {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.fade-in {
+  position: relative;
+  -webkit-animation-name: fader;
+          animation-name: fader;
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F7FFF7;
+}
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+button {
+  width: 10rem;
+}
+
 .hidden {
   display: none;
 }
 
 #survey-mainbox {
-  border: solid darkgoldenrod 1px;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 20rem;
-  margin-top: 5rem;
+  width: 40rem;
   text-align: center;
-}
-
-#survey-mainbox #slider-box {
-  border: red solid 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 10rem;
+  font-family: 'Roboto Mono', monospace;
+  color: #092327;
 }
 
 #survey-mainbox #slider-box .slider {
-  min-width: 100%;
-  margin: 1rem;
-  border: greenyellow 1px solid;
+  background-color: rgba(241, 145, 50, 0.466);
+  border-radius: .5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+}
+
+#survey-mainbox #slider-box .slider .slider-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=styles.css.map */

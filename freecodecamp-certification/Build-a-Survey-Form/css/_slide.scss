@@ -1,0 +1,11 @@
+@keyframes fader {
+    0% {opacity: 0%;}
+
+    100% {opacity: 100%;}
+    
+}
+.fade-in{
+    position: relative;
+    animation-name: fader;
+    animation-duration: .75s;
+}
