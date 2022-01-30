@@ -10,6 +10,12 @@ h1{
 }
 button{
     width: 10rem;
+    border:1px solid hsla(88, 46%, 50%, 0.123);
+    border-radius: .5rem;
+    background-color: hsla(46, 100%, 86%, 0.623);
+    height: 3rem;
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
 }
 
 .hidden{
