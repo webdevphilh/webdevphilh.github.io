@@ -32,6 +32,12 @@ p, a, em, label {
   font-weight: 700;
 }
 
+.focus {
+  border-color: blue;
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 255, 0.164);
+          box-shadow: 2px 2px 5px 2px rgba(0, 0, 255, 0.164);
+}
+
 .main-content {
   background-color: #F9FAFB;
 }
@@ -114,8 +120,7 @@ p, a, em, label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: .5rem 3rem;
-  width: 10rem;
+  margin: .5rem 3rem .5rem;
 }
 
 .form-box div .input-box label {
@@ -132,9 +137,28 @@ p, a, em, label {
   border-radius: .25rem;
 }
 
-.form-box div .input-box input:focus {
-  border-color: blue;
-  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, 0.164);
-          box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, 0.164);
+.form-box div .input-box input.error {
+  border-color: red;
+}
+
+.submit-btn {
+  margin: 2.5rem 7rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  padding: .5rem 2rem .75rem;
+  border: none;
+  border-radius: .5rem;
+  color: white;
+  background-color: #596D48;
+}
+
+.submit-txt {
+  margin-left: 7rem;
+  color: #2c2c2c;
+}
+
+.submit-txt a {
+  color: #596D48;
+  text-decoration: unset;
 }
 /*# sourceMappingURL=styles.css.map */
