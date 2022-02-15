@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(270px, 25vw))[3];
+      grid-template-columns: repeat(3, minmax(270px, 25vw));
+  -ms-grid-rows: 20vh 35vh 32svh;
+      grid-template-rows: 20vh 35vh 32svh;
+  gap: 20px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FAFAFA;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+header {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header h1 {
+  color: #4c4e61;
+}
+
+header h1 span {
+  color: #4c4e61;
+  font-weight: 200;
+}
+
+header p {
+  margin: auto;
+  margin-bottom: 1.5rem;
+  color: #a3a5ae;
+  width: 35vw;
+}
+
+section {
+  background-color: white;
+  font-size: 15px;
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 15px 0px #cfcfcf;
+  box-shadow: 5px 5px 15px 0px #cfcfcf;
+}
+
+section > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section > div::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: "";
+  width: 100%;
+  height: 5px;
+  border-top-left-radius: 40px 20px;
+  border-top-right-radius: 40px 20px;
+}
+
+section > div.blue::before {
+  background-color: #549ef2;
+}
+
+section > div.orange::before {
+  background-color: #fcaf4a;
+}
+
+section > div.red::before {
+  background-color: #ea5353;
+}
+
+section > div.cyan::before {
+  background-color: #45d3d3;
+}
+
+section > div h2 {
+  margin: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #4c4e61;
+}
+
+section > div p {
+  margin: 1.5rem;
+  margin-top: 0;
+  color: #a3a5ae;
+}
+
+section > div img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 20%;
+  margin: 40px;
+  margin-top: 0;
+}
+
+section.supervisor {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+}
+
+section.teambuilder {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+section.karma {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+section.calculator {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: fit-content;
+        grid-template-rows: -webkit-fit-content;
+        grid-template-rows: fit-content;
+  }
+  header {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin-top: 55vh;
+  }
+  header h1 {
+    font-size: 1.6rem;
+  }
+  header p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 85vw;
+  }
+  section {
+    width: 85vw;
+  }
+  section > div::before {
+    width: 85vw;
+  }
+  section.supervisor {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  section.teambuilder {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  section.karma {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  section.calculator {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

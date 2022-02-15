@@ -1,0 +1,22 @@
+
+
+.hills-deco{
+    display: flex;
+    position:fixed;
+
+    width: 100vw;
+    height: 10.5rem;
+    bottom: 0;
+
+    background: url("../images/pattern-hills.svg");
+    background-repeat: no-repeat;
+    background-size: 200% 100% ;
+    background-position: bottom right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        margin: 1.5rem;
+    }
+}

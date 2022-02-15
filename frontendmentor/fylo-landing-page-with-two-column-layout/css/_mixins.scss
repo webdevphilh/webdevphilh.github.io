@@ -1,0 +1,182 @@
+
+// 480px 760px 1220px
+$breakpoint-up: ("tiny": " 30em", "medium": "47.5em", "large": "76.25em", "xtralarge": "87.5em");
+
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoint-up, $size)){
+        @content;
+    }
+}
+
+// 480px
+@include breakpoint-up("tiny"){
+    .section-1 ,.section-3{
+        form{
+            input{
+                max-width: 26rem;
+            }
+            button{
+                max-width: 26rem;
+            }
+        }
+    }
+}
+
+// 760px
+@include breakpoint-up("medium"){
+    nav{
+        padding: 5rem;
+        font-size: $medium;
+        margin-bottom: 0;
+        .logo{
+            width: 10rem;
+        }
+        a{
+            &:not(:last-child){
+                margin-right: 3.75rem;
+            }
+            &:last-child{
+                margin-right: 5rem;
+            }
+        }
+    }
+
+    .illustration{
+        margin: 0;
+    }
+
+    section{
+        p{
+            max-width: 34rem;
+        }
+        h1{
+            max-width: 30rem;
+        }
+    }
+
+    .decowave{
+        margin-top: 10rem;
+        height: 8rem;
+        background-image: url("../images/bg-curve-desktop.svg");
+    }
+}
+
+// 1220px
+@include breakpoint-up("large"){
+
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 5rem;
+
+        header{
+            margin-right: 0;
+            margin-left: 0;
+            padding-right: 0;
+            align-items: flex-start;
+        }
+
+        p, h1{
+            text-align: left;
+            width: 100%;
+        }
+
+        h1{
+            font-size: 2.3rem;
+            max-width: 34rem;
+        }
+
+        form{
+            flex-direction: row;
+            text-align: left;
+        }
+    }
+
+    .section-1, .section-2{
+        flex-direction: row-reverse;
+    }
+
+    .section-1{
+        form{
+            margin-top: 0 !important;
+            input{
+                max-width: 20rem;
+            }
+            button{
+                max-width: 12.5rem;
+            }
+        }
+    }
+
+    .section-2{
+        
+        header{
+            width: 50%;
+            align-items: flex-start;
+        }
+        .illustration{
+            width: 45%;
+        }
+
+        h2{
+            font-size: 2.3rem;
+            max-width: 38rem;
+        }
+    }
+
+    .quotebox{
+        margin-left: 0;
+        width: 50%;
+    }
+    .section-3{
+
+        header{
+            width: 45%;
+            margin-right: 0;
+            margin-left: 0;
+            padding-right: 0;
+            align-items: flex-start;
+        }
+
+        form{
+            width: 39%;
+            margin: 0;
+            align-items: flex-start;
+
+            input{
+                max-width: 30rem;
+            }
+
+            button{
+                margin-top: 1.5rem;
+                max-width: 12.5rem;
+            }
+        }
+    }
+
+    footer{
+        padding-left: 5rem;
+
+        > div{
+            display: flex;
+            margin-top: 1.5rem;
+
+            > div{
+                width: 30%;
+            }
+        }
+
+        .impressum{
+            display: flex;
+            > div{
+                width: 50%;
+            }
+        }
+
+        .sm-icons{
+            align-items: flex-start;
+        }
+    }
+}

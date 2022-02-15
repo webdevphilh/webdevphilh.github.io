@@ -1,0 +1,15 @@
+
+.term-box .search-term {
+    transition: color  ease-in-out .2s;
+    &:hover{
+        color: $lightGrayishCyan-Background;
+        background-color: $desaturatedDarkCyan;
+    }
+}
+
+.position{
+    transition: color ease-in-out .1s;
+    &:hover{
+        color: $desaturatedDarkCyan;
+    }
+}

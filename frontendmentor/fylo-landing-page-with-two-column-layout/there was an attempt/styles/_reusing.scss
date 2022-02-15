@@ -1,0 +1,33 @@
+@import "variables";
+
+// p mobile font-size
+// illustrationen mobile width
+// color
+//button style
+
+@mixin alignCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2{
+    font-weight: 700;
+    color: $veryDarkBlue;
+}
+
+input{
+    border-radius: .2em;
+}
+
+button{
+    background-color: $brightBlue;
+    color: $lightGrayishBlue;
+    font-weight: 700;
+    border-radius: .2em;
+    border: none;
+}
+
+p{
+    max-width: 40rem;
+}

@@ -1,0 +1,53 @@
+@import "variables";
+
+footer{
+
+    div div{
+        margin-bottom: 3.75rem;
+    }
+    
+    padding: 4rem 2.25rem;
+    background-color: $veryDarkBlue;
+    & .logo{
+        filter: brightness(0) invert(100);
+    }
+    a, p{
+        color: white;
+    }
+    .lil-container{
+        display: flex;
+        flex-direction: column;
+        a{
+            width: fit-content;
+            margin: .5em 0;
+        }
+    }
+
+
+    .contact-infos{
+        .phone::before{
+            content: url("../images/icon-phone.svg");
+            margin-right: 1rem;
+        }
+        .email::before{
+            content: url("../images/icon-email.svg");
+            margin-right: 1rem;
+        }
+    }
+
+    .sm-icons{
+        display: flex;
+        justify-content: center;
+        a{
+            margin: .3rem;
+        }
+        svg{
+            fill: white;
+            //filter: brightness(0) invert(100);
+            width: 2rem;
+            border: 1px solid white;
+            padding: .5rem;
+            border-radius: 50%;
+        }
+    }
+}

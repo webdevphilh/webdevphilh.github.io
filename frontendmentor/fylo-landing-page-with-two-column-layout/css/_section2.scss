@@ -1,0 +1,78 @@
+@import "variables";
+
+
+.decowave{
+    display: flex;
+    position: relative;
+    margin: 0;
+    margin-top: 10rem;
+    height: 5rem;
+    width: 100%;
+    background: url("../images/bg-curve-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-2{
+    padding-bottom: 3rem;
+    background-color: $lightGrayishBlue;
+    h2{
+        font-size: 1rem;
+    }
+    .reasons{
+        text-align: left;
+        color: $desaturatedBlue;
+    }
+}
+
+.green-cta{
+    display: flex;
+    border-bottom: 2px solid $moderateCyan;
+    padding-bottom: .5rem;
+
+    a{
+        color: $moderateCyan;
+    }
+
+    .arrow-icon{
+        margin-left: .5rem;
+    }
+}
+
+.quotebox{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 1rem;
+    padding: 1rem 1rem;
+    background-color: white;
+    border-radius: .25rem;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    .quotes-icon{
+        width: 1rem;
+    }
+    p{
+        text-align: left;
+        font-size: .75rem;
+        line-height: 1.1rem;
+    }
+    .persona{
+        display: flex;
+        .face{
+            height: 2rem;
+            border-radius: 50%;
+        }
+        div{
+            .name{
+                font-weight: 700;
+                margin: 0 0 0 1rem;
+            }
+            .job{
+                margin: 0 0 0 1rem;
+                color: $desaturatedBlue;
+            }
+        }
+    }
+}

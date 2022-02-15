@@ -1,0 +1,25 @@
+@import "designs";
+
+
+@media screen and (min-width:50rem){
+
+    .hills-deco{
+        height: 15rem;
+        background-size: 100% 15rem ;
+    }
+    .days, .hours, .min, .sec{
+        margin: 0 1.2rem;
+        &::before, &::after{
+            width: 10rem;
+            height: 5rem;
+        }
+        p{
+            margin-top: 12rem;
+            font-size: 1rem;
+        }
+        span{
+            margin-top: 2rem;
+            font-size: 5rem;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+
+.hills-deco{
+    a *{
+        transition: fill .3s ease-in-out;
+    }
+
+    a:hover *{
+        fill: $Softred;
+    }
+}

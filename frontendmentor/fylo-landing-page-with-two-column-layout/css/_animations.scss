@@ -1,0 +1,49 @@
+@import "variables";
+
+
+button{
+    transition: background-color .2s ease-in-out;
+}
+button:hover{
+    background-color: lighten($brightBlue, 10);
+}
+
+
+.green-cta{
+    transition: border-bottom .2s ease-in-out;
+    a{
+        transition: color .2s ease-in-out;
+    }
+    .arrow-icon .filler{
+        transition: fill .2s ease-in-out;
+    }
+}
+.green-cta:hover{
+    border-bottom: 2px solid lighten($moderateCyan, 30);
+    a{
+        color: lighten($moderateCyan, 30);
+    }
+    .arrow-icon .filler{
+        fill: lighten($moderateCyan, 30);
+    }
+}
+
+
+footer{
+    .impressum a{
+        transition: color .2s ease-in-out;
+    }
+    .impressum a:hover{
+        color: $brightBlue;
+    }
+
+    .sm-icons{
+        svg{
+            transition: fill .2s ease-in-out;
+        }
+        svg:hover{
+            fill: $brightBlue;
+            border: 1px solid $brightBlue;
+        }
+    }
+}

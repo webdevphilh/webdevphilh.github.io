@@ -1,0 +1,29 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Spartan', sans-serif;     // 500 700
+    font-size: 100%;
+}
+
+body{
+    background: $lightGrayishCyan-Background;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3.5em;
+    border-radius: .25rem;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}

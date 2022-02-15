@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  background: url("../images/bg-desktop.png");
+  width: 100vw;
+  height: 100vh;
+  background-color: #0c122c;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1d2c67;
+  width: 20rem;
+  height: 12rem;
+  border-radius: 1rem 6rem 1rem 1rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .navigation .logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0.5rem 0 0 2em;
+}
+
+body .navigation .links {
+  margin: 0 2em;
+}
+
+body .navigation .links .symbol-link {
+  background-color: #0c122c;
+  height: 1.2rem;
+  padding: 0.9rem;
+  margin: 0.3rem;
+  border-radius: 0.5rem;
+}
+
+body .process {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  background-color: #1d2c67;
+  min-width: 20rem;
+  height: 10em;
+  border-radius: 1rem;
+  color: #dddbff;
+  font-weight: 300;
+}
+
+body .process .big-text {
+  font-weight: 700;
+}
+
+body .process label {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+body .process #storage {
+  width: 80%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: none;
+  background-color: #162150;
+  border-radius: 1rem;
+}
+
+body .process #storage::-webkit-progress-bar {
+  background-color: #22337c;
+  border-radius: 1rem;
+}
+
+body .process #storage::-webkit-progress-value {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffa399), to(#ff4d97));
+  background: linear-gradient(#ffa399, #ff4d97);
+  border-radius: 1rem;
+}
+
+body .process #storage::-moz-progress-bar {
+  background: linear-gradient(#ffa399, #ff4d97);
+  border-radius: 1rem;
+}
+
+body .process .space-text {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  font-size: 0.8em;
+  color: #dddbff;
+}
+
+body .process .space-text p {
+  margin-top: 1em;
+}
+
+body .process .space-text p.max-cap {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+body .process .popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  bottom: -0.6rem;
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
+  background: white;
+  color: #848794;
+  font-weight: 700;
+}
+
+body .process .popup span {
+  font-size: 2em;
+  color: #0c122c;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-size: 100% 50%;
+  }
+  body .process {
+    margin-left: 1rem;
+    margin-top: 3.4rem;
+    width: 40%;
+  }
+  body .process label {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 10%;
+  }
+  body .process .popup {
+    position: relative;
+    width: 10rem;
+    left: 24%;
+    bottom: 100%;
+    border-bottom-right-radius: 0;
+  }
+  body .process .popup .pointer {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 1.5rem solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 1.5rem solid white;
+    right: 0;
+    top: 98%;
+  }
+  body #colorBlindSVG {
+    position: absolute;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

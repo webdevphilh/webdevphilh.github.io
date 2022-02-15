@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "exceptions.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "exceptions.css"
+}

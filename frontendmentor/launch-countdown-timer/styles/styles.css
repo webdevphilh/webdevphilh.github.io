@@ -1,0 +1,227 @@
+html {
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: 'Red Hat Text', sans-serif;
+  font-weight: 700;
+  background: url("../images/bg-stars.svg"), -webkit-gradient(linear, left top, left bottom, from(#191a24), to(#1e1f29));
+  background: url("../images/bg-stars.svg"), linear-gradient(#191a24, #1e1f29);
+  background-size: 100vw 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 65vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: .3rem;
+  width: 90%;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+p {
+  color: #8486a9;
+}
+
+.days, .hours, .min, .sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #191a24;
+  border-radius: .5rem;
+  margin: 0 .5rem;
+}
+
+.days::before, .days::after, .hours::before, .hours::after, .min::before, .min::after, .sec::before, .sec::after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 5.25rem;
+  height: 2.5rem;
+  border-radius: .5rem;
+}
+
+.days::before, .hours::before, .min::before, .sec::before {
+  background-color: #2D2C43;
+}
+
+.days::after, .hours::after, .min::after, .sec::after {
+  background-color: #32364E;
+  -webkit-box-shadow: 0px 10px 0px 0px #1e1f29;
+  box-shadow: 0px 10px 0px 0px #1e1f29;
+}
+
+.days p, .hours p, .min p, .sec p {
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 6rem;
+  font-size: 0.5rem;
+  letter-spacing: .15rem;
+}
+
+.days span, .hours span, .min span, .sec span {
+  color: #fb6087;
+  font-size: 2.5rem;
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: .8rem;
+  z-index: 2;
+}
+
+.section-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hills-deco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 10.5rem;
+  bottom: 0;
+  background: url("../images/pattern-hills.svg");
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  background-position: bottom right;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hills-deco a {
+  margin: 1.5rem;
+}
+
+.days, .hours, .min, .sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #191a24;
+  border-radius: .5rem;
+  margin: 0 .5rem;
+}
+
+.days::before, .days::after, .hours::before, .hours::after, .min::before, .min::after, .sec::before, .sec::after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 5.25rem;
+  height: 2.5rem;
+  border-radius: .5rem;
+}
+
+.days::before, .hours::before, .min::before, .sec::before {
+  background-color: #2D2C43;
+}
+
+.days::after, .hours::after, .min::after, .sec::after {
+  background-color: #32364E;
+  -webkit-box-shadow: 0px 10px 0px 0px #1e1f29;
+  box-shadow: 0px 10px 0px 0px #1e1f29;
+}
+
+.days p, .hours p, .min p, .sec p {
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 6rem;
+  font-size: 0.5rem;
+  letter-spacing: .15rem;
+}
+
+.days span, .hours span, .min span, .sec span {
+  color: #fb6087;
+  font-size: 2.5rem;
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: .8rem;
+  z-index: 2;
+}
+
+@media screen and (min-width: 50rem) {
+  .hills-deco {
+    height: 15rem;
+    background-size: 100% 15rem;
+  }
+  .days, .hours, .min, .sec {
+    margin: 0 1.2rem;
+  }
+  .days::before, .days::after, .hours::before, .hours::after, .min::before, .min::after, .sec::before, .sec::after {
+    width: 10rem;
+    height: 5rem;
+  }
+  .days p, .hours p, .min p, .sec p {
+    margin-top: 12rem;
+    font-size: 1rem;
+  }
+  .days span, .hours span, .min span, .sec span {
+    margin-top: 2rem;
+    font-size: 5rem;
+  }
+}
+
+.hills-deco a * {
+  -webkit-transition: fill .3s ease-in-out;
+  transition: fill .3s ease-in-out;
+}
+
+.hills-deco a:hover * {
+  fill: #fb6087;
+}
+/*# sourceMappingURL=styles.css.map */

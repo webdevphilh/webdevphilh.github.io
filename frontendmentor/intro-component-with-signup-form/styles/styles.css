@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background-image: url("../images/bg-intro-desktop.png");
+  background-color: #ff7a7a;
+}
+
+body .left {
+  height: 100vh;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 22%;
+  color: white;
+}
+
+body .left h1 {
+  font-size: 2.7em;
+}
+
+body .right {
+  height: 100vh;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  margin-top: 14vh;
+}
+
+body .right .suggester {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #6055a5;
+  border-radius: 10px;
+  height: 3.5rem;
+  width: 75%;
+  color: white;
+  font-weight: 600;
+  margin: 20px 0;
+  -webkit-box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+body .right .suggester span {
+  color: #b9b6d3;
+}
+
+body .right .formwindow {
+  background-color: white;
+  width: 75%;
+  height: 59%;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .right .formwindow input {
+  color: #3e3c49;
+  font-weight: 800;
+  font-size: 0.9em;
+  height: 4em;
+  width: 80%;
+  margin-bottom: 4%;
+  margin-left: 8%;
+  border-radius: 5px;
+  border: solid 1px #b9b6d3;
+  padding-left: 2em;
+}
+
+body .right .formwindow input:first-of-type {
+  margin-top: 8%;
+}
+
+body .right .formwindow input:focus {
+  border: 1px solid black;
+}
+
+body .right .formwindow button {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  width: 85%;
+  height: 4em;
+  margin-left: 8%;
+  background-color: #38cc8c;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 0px 5px 0px 0px #54ac86;
+  box-shadow: 0px 5px 0px 0px #54ac86;
+}
+
+body .right .formwindow button:hover {
+  background-color: #61d6a3;
+  -webkit-box-shadow: 0px 5px 0px 0px #54ac86;
+  box-shadow: 0px 5px 0px 0px rgba(84, 172, 134, 0.8);
+  cursor: pointer;
+}
+
+body .right .formwindow .disclaimer {
+  margin: auto;
+  margin-top: 2%;
+  font-size: .7em;
+  color: #b9b6d3;
+}
+
+body .right .formwindow .disclaimer a {
+  color: #ff7a7a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .left {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 4.5em 10% -20% 10%;
+    text-align: center;
+  }
+  body .left h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  body .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .right .suggester {
+    width: 90%;
+    height: 5em;
+  }
+  body .right .suggester p {
+    text-align: center;
+    width: 60%;
+  }
+  body .right .formwindow {
+    width: 90%;
+    height: auto;
+    padding-bottom: 1.2em;
+  }
+  body .right .formwindow input {
+    height: 3.5em;
+  }
+  body .right .formwindow .disclaimer {
+    margin-top: 20px;
+    text-align: center;
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,121 @@
+// 630px 690px 896px 1135px
+$breakpoint-up: ("tiny": "39.375em", "medium": "43.125em", "large": "56em", "larger": "70.937em");
+
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoint-up, $size)){
+        @content;
+    }
+}
+
+// 630px
+@include breakpoint-up("tiny"){
+
+    .section-1{
+        background-size: cover !important;
+    }
+}
+
+// 690px
+@include breakpoint-up("medium"){
+
+    button{
+        max-width: 14.75rem;
+        padding: 1.25em 2.25em;
+    }
+
+    p{
+        max-width: 30rem;;
+    }
+
+    .section-5{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+            .trustee-logo{
+                margin: 2em 3em;
+            }
+    }
+
+}
+
+// 896px
+@include breakpoint-up("large"){
+    .flex-wrap{
+        & p, & h2{
+            max-width: 20rem;
+        }
+    }
+}
+
+// 1135px
+@include breakpoint-up("larger"){
+
+    .section-1{
+        background: url("../images/bg-header-desktop.png");
+    }
+
+    .section-2{
+        margin-left: -26vw;
+        header{
+            margin-left: 26vw;
+        }
+    }
+
+    .reason-container{
+        flex-direction: column;
+
+        p, h3{
+            text-align: left;
+            margin-left: 7rem;
+        }
+    }
+
+    .section-5{
+        margin-top: 6.5em;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        justify-content: center;
+
+        a{
+            grid-column: 1;
+            display: flex;
+            width: fit-content;
+            margin-left: 10.25em;
+        }
+
+        .little-logo{
+            margin: auto 8.125rem auto 0;
+            padding: 0;
+        }
+
+        .impressum{
+            grid-column: 2;
+            margin: 0;
+            height: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            a{
+                width: 12rem;
+                margin: auto 1.5em;
+            }
+        }
+
+        .sm-icons{
+            grid-column: 3;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: 10rem;
+            a{
+                height: 1.5em;
+            }
+
+        }
+    }
+}

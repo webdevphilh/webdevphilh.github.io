@@ -1,0 +1,159 @@
+
+$custom-red: hsl(0, 100%, 74%);
+$custom-Green: hsl(154, 59%, 51%);
+$custom-blue: hsl(248, 32%, 49%);
+$custom-DarkBlue: hsl(249, 10%, 26%);
+$custom-grayishBlue: hsl(246, 25%, 77%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../images/bg-intro-desktop.png");
+    background-color: $custom-red;
+    .left{
+        height: 100vh;
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 22%;
+        color: white;
+        h1{
+            font-size: 2.7em;
+        }
+    }
+    .right{
+        height: 100vh;
+        grid-column: 2;
+        margin-top: 14vh;
+        .suggester{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $custom-blue;
+            border-radius: 10px;
+            height: 3.5rem;
+            width: 75%;
+            color: white;
+            font-weight: 600;
+            margin: 20px 0;
+
+            -webkit-box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.2);
+            span{
+                color: $custom-grayishBlue;
+            }
+        }
+        .formwindow{
+            background-color: white;
+            width: 75%;
+            height: 59%;
+            min-height: fit-content;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            input{
+                color: $custom-DarkBlue;
+                font-weight: 800;
+                font-size: 0.9em;
+                height: 4em;
+                width: 80%;
+                margin-bottom: 4%;
+                margin-left: 8%;
+                border-radius: 5px;
+                border: solid 1px $custom-grayishBlue;
+                padding-left: 2em;
+                &:first-of-type{
+                    margin-top: 8%;
+                }
+                &:focus{
+                    border: 1px solid black;
+                }
+            }
+            button{
+                color: white;
+                font-weight: 700;
+                letter-spacing: 0.07em;
+                width: 85%;
+                height: 4em;
+                margin-left: 8%;
+                background-color: $custom-Green;
+                border-radius: 5px;
+                border: none;
+                -webkit-box-shadow: 0px 5px 0px 0px rgba(84,172,134,1);
+                -moz-box-shadow: 0px 5px 0px 0px rgba(84,172,134,1);
+                box-shadow: 0px 5px 0px 0px rgba(84,172,134,1);
+
+                &:hover{
+                    background-color: lighten($color: $custom-Green, $amount: 10);
+                    -webkit-box-shadow: 0px 5px 0px 0px rgba(84,172,134,1);
+                    -moz-box-shadow: 0px 5px 0px 0px rgba(84,172,134,1);
+                    box-shadow: 0px 5px 0px 0px rgba(84,172,134,0.8);
+                    cursor: pointer;
+                }
+            }
+            .disclaimer{
+                margin: auto;
+                margin-top: 2%;
+                font-size: .7em;
+                color: $custom-grayishBlue;
+                a{
+                    color: $custom-red;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:750px){
+    body{
+        display: flex;
+        flex-direction: column;
+        .left{
+            height: fit-content;
+            margin: 4.5em 10% -20% 10%;
+            text-align: center;
+            h1{
+                font-size: 1.5em;
+                margin-bottom: 1em;
+            }
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .suggester{
+                width: 90%;
+                height: 5em;
+                p{
+                    text-align: center;
+                    width: 60%;
+                }
+            }
+            .formwindow{
+                width: 90%;
+                height: auto;
+                padding-bottom: 1.2em;
+                input{
+                    height: 3.5em;
+                }
+                .disclaimer{
+                    margin-top: 20px;
+                    text-align: center;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

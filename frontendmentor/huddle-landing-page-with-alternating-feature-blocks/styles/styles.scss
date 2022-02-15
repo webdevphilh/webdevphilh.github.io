@@ -1,0 +1,348 @@
+$custom-pink: hsl(322, 100%, 66%);
+$veryPaleCyan: hsl(193, 100%, 96%);
+$veryDarkCyan: hsl(192, 100%, 9%);
+$grayishBlue: hsl(208, 11%, 55%);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+//styling
+body{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;   // 400 700
+    color: $veryDarkCyan;
+    align-items: center;
+    nav{
+        display: flex;
+        background: $veryPaleCyan;
+        padding: 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+        & .logo img{
+            height: 1rem;
+        }
+        & .navbutt{
+            border: none;
+            background: white;
+            font-weight: 700;
+            height: 2.5em;
+            border-radius: 2.5em;
+            width: 9em;
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(222,222,222,1);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(222,222,222,1);
+            box-shadow: 0px 0px 10px 0px rgba(222,222,222,1);
+        }
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5em 1.8em 2.5em 1.8em;
+        background: $veryPaleCyan url("../images/bg-hero-mobile.svg");
+        background-size: contain;
+
+        h1{
+            font-size: 1.5em;
+            margin-bottom: 0.7em;
+        }
+        p{
+            font-size: 0.9em;
+            line-height: 1.5em;
+            margin-bottom: 2em;
+        }
+        button{
+            border: none;
+            background: $custom-pink;
+            font-weight: 700;
+            width: 18em;
+            height: 3em;
+            border-radius: 2.5em;
+            color: $veryPaleCyan;
+            margin-bottom: 5em;
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(222,222,222,1);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(222,222,222,1);
+            box-shadow: 0px 0px 10px 0px rgba(222,222,222,1);
+        }
+        img{
+            width: 100%;
+            max-width: 50rem;
+        }
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        border-radius: 1em;
+        -webkit-box-shadow: 0px 0px 10px 0px rgb(233, 233, 233);
+        -moz-box-shadow: 0px 0px 10px 0px rgb(233, 233, 233);
+        box-shadow: 0px 0px 10px 0px rgb(233, 233, 233);
+        width: 90%;
+        margin: auto;
+        margin-top: 2rem;
+        img{
+            margin-top: 3rem;
+            align-self: center;
+            width: 70%;
+            max-width: 25rem;
+        }
+        > div{
+            display: flex;
+            flex-direction: column;
+            padding: 3rem 2rem;
+            align-items: center;
+            h2{
+                font-family: 'Poppins', sans-serif;
+                color: $veryDarkCyan;
+                margin: 1em 0;
+                font-size: 1.2em;
+            }
+            p{
+                font-size: 0.8em;
+                line-height: 1.5em;
+                color: $grayishBlue;
+                text-align: center;
+                max-width: 32rem;
+            }
+        }
+
+    }
+    .CTA-box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+        height: 9em;
+        padding: 2em 0 0 0;
+        font-size: 0.9em;
+        margin: auto;
+        margin-top: 3em;
+        background: white;
+        border-radius: 1em;
+        -webkit-box-shadow: 0px -5px 5px 0px rgba(235,235,235,1);
+        -moz-box-shadow: 0px -5px 5px 0px rgba(235,235,235,1);
+        box-shadow: 0px -5px 5px 0px rgba(235,235,235,1);
+        position: relative;
+        top: 4.5em;
+        button{
+            border: none;
+            background: $custom-pink;
+            font-weight: 700;
+            width: 16em;
+            height: 3em;
+            border-radius: 2.5em;
+            color: $veryPaleCyan;
+            margin: 3em 0;
+            -webkit-box-shadow: 0px 0px 10px 0px rgb(173, 173, 173);
+            -moz-box-shadow: 0px 0px 10px 0px rgb(173, 173, 173);
+            box-shadow: 0px 0px 10px 0px rgb(173, 173, 173);
+        }
+    }
+    footer{
+        padding: 8em 1em 0 1em;
+        background: $veryDarkCyan;
+        color: white;
+        .adress{
+            p{
+                display: flex;
+                margin: 2rem;
+                &.location::before{
+                    position: relative;
+                    width: 2em;
+                    left: -1.5rem;
+                    content: url(../images/icon-location.svg);
+                }
+                &.telefon::before{
+                    position: relative;
+                    width: 2em;
+                    left: -1.5rem;
+                    content: url(../images/icon-phone.svg);
+                }
+                &.email::before{
+                    position: relative;
+                    width: 2em;
+                    left: -1.5rem;
+                    content: url(../images/icon-email.svg);
+                }
+            }
+            img{
+                filter:invert(50%);
+                width: 12rem;
+
+            }
+        }
+        .impressum div{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            a{
+                margin-top: 1em;
+                margin-left: .5em;
+                color: white;
+                text-decoration: none;
+            }
+        }
+        .sm-links{
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            a{
+                margin: .3em 1.3em;
+                height: fit-content;
+                svg{
+                    width: 1.5rem;
+                    height: 1.5em;
+                    padding: .8em;
+                    fill: white;
+                    border: solid 1px white;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .copyright{
+            margin-top: 0.5em;
+            text-align: center;
+            font-size: .6em;
+        }
+    }
+}
+
+// responsive and hover
+@media screen and (min-width:900px){
+    body{
+        nav{
+            position: absolute;
+            width: 90%;
+            padding: 2rem 4rem;
+            & .logo img{
+                height: 2rem;
+            }
+            & .navbutt{
+                height: 4em;
+                width: 15em;
+            }
+
+        }
+        header{
+            flex-direction: row;
+            background: $veryPaleCyan url("../images/bg-hero-desktop.svg");
+            background-size:cover;
+            h1, p{
+                margin: 2rem;
+                text-align: left;
+                max-width: 40em;
+            }
+            h1{
+                font-size: 2.5em;
+            }
+            p{
+                font-size: 1em;
+            }
+            img{
+                padding: 2rem;
+            }
+        }
+        section{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 90rem;
+            //margin: auto;
+            margin-top: 2rem;
+            &.row-reverse{
+                flex-direction: row-reverse;
+            }
+            img{
+                padding: 2rem;
+            }
+            > div{
+                align-items:flex-start;
+                margin: auto;
+                h2, p{
+                    text-align: left;
+                }
+                h2{
+                    font-size: 2em;
+                    margin-bottom: 0;
+                }
+                p{
+                    font-size: 1em;
+                }
+            }
+        }
+        .CTA-box{
+            max-width: 50rem;
+            height: fit-content;
+            h3{
+                font-size: 2rem;
+            }
+            button{
+                width: 18em;
+                height: 3.5em;
+                border-radius: 3rem;
+                font-size: 1.5em;
+                margin: 2em 0;
+            }
+        }
+        footer{
+            div{
+                display: flex;
+                margin: 1rem;
+                font-size: 0.9em;
+                &.adress{
+                    display: flex;
+                    flex-direction: column;
+                    width: 30%;
+                    margin: 1rem 5rem;
+                    p{
+                        margin: 1rem;
+                        width: 100%;
+                    }
+                }
+                &.impressum{
+                    display: flex;
+                    width: 30%;
+                    margin: 3rem 1rem;
+                    div{
+                        margin-right: 6rem;
+                    }
+                }
+                &.sm-links{
+                    width: 30%;
+                    margin: 5rem 1rem;
+                }
+            }
+            .copyright{
+                padding: 2rem;
+            }
+        }
+
+
+        button:hover{
+            cursor: pointer;
+        }
+        .navbutt:hover{
+            color: $grayishBlue;
+        }
+        .headbutt:hover{
+            background: hsla(322, 100%, 66%, 0.7);
+        }
+        .cta-butt:hover{
+            background: hsla(322, 100%, 66%, 0.7);
+        }
+        footer{
+            .impressum{
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+            .sm-links a:hover > svg{
+                fill: $custom-pink;
+                border: $custom-pink 1px solid;
+            }
+        }
+    }
+}

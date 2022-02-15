@@ -1,0 +1,64 @@
+
+/*
+.filter{
+
+
+    }
+
+
+}
+
+*/
+
+
+.filter{
+    position: relative;
+    justify-content: space-between;
+    margin: auto;
+    top: -2.5rem;
+    background: white;
+    width: 95%;
+    height: fit-content;
+    *{
+        outline: 1px solid greenyellow;
+    }
+
+    .filter-container{
+        display: flex;
+        flex-direction: row;
+
+        .filter-item{
+            display: flex;
+            align-items: center;
+            margin: .25em;
+            background-color: $lightGrayishCyan-FilterTablets;
+
+            p{
+                color: $darkGrayishCyan;
+                &:not(:first-of-type)::before{
+                    display: inline-block;
+                    content: "";
+                    width: .25rem;
+                    height: .25rem;
+                    border-radius: 50%;
+                    margin: .3em .5em;
+                    background: $darkGrayishCyan;
+                }
+            }
+            button{
+                background-color: $desaturatedDarkCyan;
+                height: 100%;
+                padding: .6em;
+                border-top-right-radius: .25rem;
+                border-bottom-right-radius: .25rem;
+            }
+        }
+    }
+
+    .clear-button{
+        margin: 1.5em;
+        color: $darkGrayishCyan;
+        font-weight: 700;
+        background-color: white;
+    }
+}

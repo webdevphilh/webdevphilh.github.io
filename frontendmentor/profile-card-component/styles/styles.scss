@@ -1,0 +1,68 @@
+$darkcyan: hsl(185, 75%, 39%);
+$verydarkdesaturatedblue: hsl(229, 23%, 23%);
+$darkgrayishblue: hsl(227, 10%, 46%);
+$darkgray: hsl(0, 0%, 59%);
+
+body{
+    background-color: #19A1AD;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+.card{
+    display: grid;
+    width: 325px;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+}
+.portrait{
+    position: relative;
+    border-radius: 50%;
+    border: white 5px solid;
+    margin: auto;
+    top: -50%;
+}
+.content{
+    top: -20px;
+    position: relative;
+    text-align: center;
+}
+.socialmedia{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fattxt{
+    font-weight: 700;
+}
+.grey-txt{
+    color: $darkgrayishblue;
+}
+.yeyeyouarespecial{
+    font-size: 0.9rem;
+}
+.minitxt{
+    font-size: 0.7rem;
+}
+.seperator{
+    height: 1px;
+    width: 100%;
+    background-color: $darkgray;
+    margin-top: 30px;
+
+}
+.bgbubble{
+    position: absolute;
+    z-index: -1;
+    &.top{
+        width: 100vw;
+        margin-left: -50%;
+        margin-top: -80%;
+    }
+    &.bot{
+        margin-left: 50%;
+        margin-top: -10%;
+    }
+}

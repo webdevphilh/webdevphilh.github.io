@@ -1,0 +1,147 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+body > div {
+  -webkit-box-shadow: 0px 0px 10px 0px #d9d9d9;
+  box-shadow: 0px 0px 10px 0px #d9d9d9;
+  border-radius: 15px;
+  width: 50vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 0.5fr 1fr;
+      grid-template-rows: 0.5fr 1fr;
+}
+
+body > div header {
+  padding: 2rem;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  grid-column: 1 / -1;
+}
+
+body > div header h1 {
+  margin: 0;
+  color: #2ab2af;
+}
+
+body > div header h2 {
+  color: #c0df34;
+}
+
+body > div header p {
+  margin: 0;
+  color: #98a6bd;
+}
+
+body > div .monthlysubs {
+  border-bottom-left-radius: 15px;
+  padding: 2rem;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-color: #2ab2af;
+  color: white;
+}
+
+body > div .monthlysubs p {
+  margin-top: -1rem;
+}
+
+body > div .monthlysubs p .price {
+  color: white;
+  font-size: 3rem;
+  margin-right: 1.2rem;
+}
+
+body > div .monthlysubs p .pm {
+  color: #e5eff5;
+}
+
+body > div .monthlysubs button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2.2rem auto 1rem;
+  width: 100%;
+  height: 3rem;
+  background-color: #c0df34;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+body > div .wyus {
+  border-bottom-right-radius: 10px;
+  padding: 2rem;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background-color: #51d6d4;
+  color: white;
+}
+
+body > div .wyus ul {
+  padding: 0;
+  color: #e5eff5;
+  line-height: 1.4rem;
+}
+
+@media screen and (max-width: 800px) {
+  body > div {
+    width: 100vw;
+    -ms-grid-columns: (fr)[3];
+        grid-template-columns: repeat(3, fr);
+    margin-top: 7rem;
+  }
+  body > div header {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    grid-column: 1 / -1;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  body > div .monthlysubs {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    grid-column: 1 / -1;
+    border-radius: 0;
+  }
+  body > div .wyus {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    grid-column: 1 / -1;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

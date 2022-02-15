@@ -1,0 +1,44 @@
+
+
+//*{outline: 1px solid greenyellow;}
+
+@media screen and (min-width:650px){
+
+    .profile-container{
+        display: flex;
+        > div{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .person{
+        min-width: 25em;
+    }
+
+    .seperator{
+        display: none;
+    }
+
+    .logo{
+        width: 5.5rem;
+        height: 5.5rem;
+        margin-top: 0;
+        padding: 2.125em 1em ;
+    }
+}
+
+@media screen and (min-width:1024px){
+
+    .profile-container{
+        margin-left: 8.25em;
+        margin-right: 8.25em;
+    }
+
+    .logo{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

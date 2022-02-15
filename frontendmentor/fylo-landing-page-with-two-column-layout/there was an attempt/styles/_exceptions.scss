@@ -1,0 +1,72 @@
+@import "variables";
+
+
+.headersect2{
+    font-size: 1em;
+}
+
+.section2{
+    margin-top: 7rem;
+    padding-bottom: 5rem;
+    background-color: $lightGrayishBlue;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 4rem;
+        margin-top: -3rem;
+        background: url("../images/bg-curve-mobile.svg");
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .illustration-sec2{
+        margin: 2.5rem 0;
+    }
+    h2{
+        margin: 4rem 0 1.5rem 0;
+    }
+    p{
+        margin-bottom: 1rem;
+        text-align: left;
+        color: $desaturatedBlue;
+    }
+    .green-cta{
+        width: fit-content;
+        margin: auto;
+        margin-top: 1em;
+        a{
+            font-size: .9em;
+            color: $moderateCyan;
+            text-decoration: none;
+            &::after{
+                content: url("../images/icon-arrow.svg");
+                margin: .5em;
+            }
+        }
+        & .deco-line{
+            margin-top: .2em;
+            height: 1px;
+            background-color: $moderateCyan;
+        }
+
+
+    }
+}
+
+.section3{
+    margin-top: 0;
+    padding: 3rem 1rem;
+    background-color: $desaturatedBlue;
+    h2{
+        margin: 1rem;
+        color: white;
+        font-size: 1.2em;
+    }
+    p{
+        color: white;
+    }
+}
+
+@media screen and (-min-width:900px){
+
+}
